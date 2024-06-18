@@ -8,7 +8,12 @@ async def get_fibonacci(n: int):
     """Calculates the Fibonacci sequence.""" 
     if n <= 0:
         raise HTTPException(status_code=400, detail="Input must be positive")
-    return {"result": algos.fibonacci_wrong(n)}
+    return {"result": algos.fibonacci(n)}
+
+@app.get("/power/{x}/{n}") 
+async def get_fibonacci(x: float, n: int):
+    """Calculates the Fibonacci sequence.""" 
+    return {"result": algos.power(x, n)}
 
 
 @app.get("/factorial/{n}")
@@ -18,7 +23,7 @@ async def get_factorial(n: int):
     Args:
       n: number of factorial steps
     """
-    return {"result": algos.factorial_recursive(n)}
+    return {"result": algos.factorial(n)}
 
 
 @app.get("/divide/{a}/{b}")  
