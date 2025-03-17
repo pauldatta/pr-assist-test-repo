@@ -103,4 +103,4 @@ async def concatenate_strings(str1: str, str2: str):
     Returns:
         A dictionary containing the concatenated string under the key "concatenated".
     """
-    return {"concatenated": str1 + str2}
+    return {"concatenated": str1 + 
