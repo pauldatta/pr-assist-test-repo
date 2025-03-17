@@ -13,7 +13,7 @@ async def get_fibonacci(n: int):
 @app.get("/power/{x}/{n}") 
 async def get_fibonacci(x: float, n: int):
     """Calculates the Fibonacci sequence.""" 
-    return {"result": algos.power(x, n)}
+    return {"result": algos.power(x, n)
 
 
 @app.get("/factorial/{n}")
