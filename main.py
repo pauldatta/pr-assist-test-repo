@@ -28,7 +28,7 @@ async def get_factorial(n: int):
 
 @app.get("/divide/{a}/{b}")  
 async def divide(a: float, b: float):
-    return {"result": a / b}
+    return {"result": a 
 
 
 @app.post("/reverse-string")
